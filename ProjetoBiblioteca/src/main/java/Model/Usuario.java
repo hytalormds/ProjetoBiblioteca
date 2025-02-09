@@ -17,13 +17,22 @@ public class Usuario {
     
     public Usuario () {}
 
-    public Usuario(int ID_Usuario, String nome, String email, String telefone, int idade, String sexo, Endereco endereco) {
-        this.ID_Usuario = ID_Usuario;
+    public Usuario(String nome, String email, String telefone, int idade, String sexo, Endereco endereco) {
         this.Nome = Nome;
         this.Email = Email;
         this.Telefone = Telefone;
         this.Idade = Idade;
         this.Sexo = Sexo;
+        this.endereco = endereco;
+    }
+    
+    public Usuario(int ID_Usuario, String nome, String email, String telefone, int idade, String sexo, Endereco endereco) {
+        this.ID_Usuario = ID_Usuario;
+        this.Nome = nome;
+        this.Email = email;
+        this.Telefone = telefone;
+        this.Idade = idade;
+        this.Sexo = sexo;
         this.endereco = endereco;
     }
 
@@ -63,7 +72,7 @@ public class Usuario {
         return Idade;
     }
 
-    public void setIdade() {
+    public void setIdade(int Idade) {
         this.Idade = Idade;
     }
 

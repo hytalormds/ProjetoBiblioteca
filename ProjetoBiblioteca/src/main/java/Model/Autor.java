@@ -11,11 +11,15 @@ public class Autor {
 
     public Autor() {}
     
+    public Autor(String nome) {
+        this.ID_Autor = ID_Autor;
+    }
+
     public Autor(int ID_Autor, String nome) {
         this.ID_Autor = ID_Autor;
         this.nome = nome;
     }
-
+    
     public int getIdAutor() {
         return ID_Autor;
     }

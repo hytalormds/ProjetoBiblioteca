@@ -11,6 +11,10 @@ public class Editora {
     
     public Editora (){}
 
+    public Editora(String nome) {
+        this.nome = nome;
+    }
+    
     public Editora(int ID_Editora, String nome) {
         this.ID_Editora = ID_Editora;
         this.nome = nome;
